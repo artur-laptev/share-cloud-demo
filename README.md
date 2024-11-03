@@ -1,8 +1,25 @@
-# React + Vite
+# ShareCloud demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![node v20+](https://img.shields.io/badge/node-%3E%3D%2020-success)
 
-Currently, two official plugins are available:
+## [Live demo](https://sharecloud.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Install
+
+```sh
+$ npm install
+```
+
+## Start development
+
+```sh
+npm run dev
+```
+
+## Build and preview
+
+```sh
+npm run build
+
+npm run preview
+```
