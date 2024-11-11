@@ -95,6 +95,7 @@ function Calendar({ tasks, addTask, canAddTask }) {
     return tasks.filter(
       (task) => dayjs(task.startDate).isBetween(dayjs(firstWeekStart), dayjs(lastWeekEnd), 'day', '[]')
         || dayjs(task.endDate).isBetween(dayjs(firstWeekStart), dayjs(lastWeekEnd), 'day', '[]')
+        || (dayjs(task.startDate).isBefore(dayjs(firstWeekStart), 'day') && dayjs(task.endDate).isAfter(dayjs(lastWeekEnd), 'day'))
     );
   }, [currentQuarterMonths, tasks]);
 
